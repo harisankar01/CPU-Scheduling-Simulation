@@ -1,5 +1,6 @@
 import pygame,sys
-def get_font(size) :  # Returns Press-Start-2P in the desired size
+from  fil3 import third
+def get_font(size) :
     return pygame.font.SysFont('Comic Sans MS', size, pygame.font.Font.bold)
 def second():
     sc3=False
@@ -31,7 +32,7 @@ def second():
     oox=pygame.rect.Rect(1188, 300, 120, 50)
     while True:
         SCREEN.fill("Black")
-        PLAY_TEXT1 = get_font(30).render("THREE processor A at 0 min | B at 1 min | C at 2 min |  D at 3 min.", True, "Blue")
+        PLAY_TEXT1 = get_font(30).render("Four processor A at 0 min | B at 1 min | C at 2 min |  D at 3 min.", True, "Blue")
         PLAY_RECT1 = PLAY_TEXT1.get_rect(topleft=(0, 0))
         PLAY_TEXT = get_font(45).render("SJF Scheduling.", True, "White")
         PLAY_RECT = PLAY_TEXT.get_rect(center=(640, 120))
@@ -56,7 +57,6 @@ def second():
                 hit2=True
         if flag3:
             cir4 = pygame.draw.circle(SCREEN, (212, 255, 0), cir_rect4.size, 20, 0)
-
             if cir4.colliderect(pix):
                 d=d+1
                 hit3=True
@@ -73,8 +73,9 @@ def second():
             e=e+1
             if e<1040 and e>1035:
                 f=f-13
-            if f > 1200 :
+            if e > 1200:
                 sc3=True
+                third()
         Cir_TEXT = get_font(18).render("20", True, "Red")
         Cir_RECT = Cir_TEXT.get_rect(center=cir_rect.size)
         SCREEN.blit(Cir_TEXT, Cir_RECT)
@@ -104,7 +105,6 @@ def second():
             flag3=True
         if cir.colliderect(dex):
             y=y+1
-
             hitFlag=True
 
 
@@ -128,4 +128,3 @@ grow = 1
                       (100, 150),
                       radius)
 """
-second()
