@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9251210-81bf-4218-b176-3c5ea8464ecd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fil2.py" beforeDir="false" afterPath="$PROJECT_DIR$/fil2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fil3.py" beforeDir="false" afterPath="$PROJECT_DIR$/fil3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +52,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Python.fil3">
+  <component name="RunManager" selected="Python.main">
     <configuration name="fil2" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="cpugit" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,7 +139,9 @@
       <workItem from="1651665201281" duration="77000" />
       <workItem from="1651940826084" duration="7013000" />
       <workItem from="1651980452286" duration="3094000" />
-      <workItem from="1651987367872" duration="8874000" />
+      <workItem from="1651987367872" duration="9289000" />
+      <workItem from="1652001250805" duration="625000" />
+      <workItem from="1652003365413" duration="2593000" />
     </task>
     <servers />
   </component>
@@ -148,9 +149,9 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/cpu_scheduling_simulation$fil3.coverage" NAME="fil3 Coverage Results" MODIFIED="1651996651751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cpu_scheduling_simulation$fil3.coverage" NAME="fil3 Coverage Results" MODIFIED="1652005983601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cpugit$main.coverage" NAME="main Coverage Results" MODIFIED="1651601549077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/cpu_scheduling_simulation$main.coverage" NAME="main Coverage Results" MODIFIED="1651996273225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cpu_scheduling_simulation$fil2.coverage" NAME="fil2 Coverage Results" MODIFIED="1651996072783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cpu_scheduling_simulation$fil2.coverage" NAME="fil2 Coverage Results" MODIFIED="1651996933442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
