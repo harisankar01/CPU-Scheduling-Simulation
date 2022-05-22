@@ -1,5 +1,5 @@
 import pygame, sys
-
+import RoundRobin
 def get_font(size) :
     return pygame.font.SysFont('Comic Sans MS', size, pygame.font.Font.bold)
 
@@ -75,8 +75,8 @@ def SJF() :
                 f = f - 13
             if e > 1200 :
                 sc3 = True
-                # Round_Robin()
-                sys.exit()
+                RoundRobin.Round_Robin()
+
         Cir_TEXT = get_font(18).render(str(val1), True, "Red")
         Cir_RECT = Cir_TEXT.get_rect(center=cir_rect.size)
         SCREEN.blit(Cir_TEXT, Cir_RECT)

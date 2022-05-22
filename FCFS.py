@@ -1,5 +1,5 @@
 import pygame, sys
-
+import SJF
 def get_font(size) :  # Returns Press-Start-2P in the desired size
     return pygame.font.SysFont('Comic Sans MS', size, pygame.font.Font.bold)
 def FCFS():
@@ -12,13 +12,9 @@ def FCFS():
     pygame.display.set_caption("Menu")
     sc2 = flag = flag2 = False
     sc1 =True
-    x = 300
+    x = z = a= 300
     y = 320
-    z = x
-    c = 370
-    a = x
-    b = 370
-    circle_list = []
+    c = b= 370
     cir_rect = pygame.rect.Rect(500, 233, x, y)
     cir_rect2 = pygame.rect.Rect(500, 233, x, y)
     cir_rect3 = pygame.rect.Rect(500, 233, x, y)
@@ -30,7 +26,6 @@ def FCFS():
 
     while True :
         if sc1 :
-            PLAY_MOUSE_POS = pygame.mouse.get_pos()
             SCREEN.fill("black")
             pygame.draw.rect(SCREEN, "Blue", rex)
             pygame.draw.rect(SCREEN, "Blue", dex)
@@ -66,14 +61,12 @@ def FCFS():
             SCREEN.blit(PLAY_TEXT, PLAY_RECT)
             SCREEN.blit(Cir_TEXT, Cir_RECT)
             x = x + 1
-
             cir_rect.update(0, 0, x, y)
             cir_rect2.update(0, 0, z, c)
             cir_rect3.update(0, 0, a, b)
             if a > 1200 :
                 sc1 = False
                 sc2 = True
-            # dis = pygame.draw.circle(SCREEN, (212, 255, 0), (z, y), 20, 0)
             if flag2 :
                 if circle.colliderect(pix) :
                     b = b + 1
@@ -89,8 +82,7 @@ def FCFS():
                 flag = True
                 val1=0
         if sc2 :
-            # SJF()
-            sys.exit()
+            SJF.SJF()
 
         for event in pygame.event.get() :
             if event.type == pygame.QUIT :
@@ -99,3 +91,4 @@ def FCFS():
             if event.type == pygame.KEYDOWN :
                 pygame.display.flip()
         pygame.display.update()
+FCFS()

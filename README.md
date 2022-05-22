@@ -1,15 +1,19 @@
 # CPU Scheduling Simulation
+
+ CPU scheduling is used to determine which process or task must be done **first** when many 
+process are waiting to be completed. In this project I have created a simulation of these three algorithms to understand them more easier.
+
   CPU use may algorithms such as 
+
   + First Come First Served(FCFS)
   + Shortest Job First(SJF)
   + Round robin
 
-  These are used to schedule which process or task must be done **first** when many 
-process are waiting. In this project I have created a simulation of these three algorithms to understand them more easier.
-
+   Basically a process have a fixed execution time(time required to complete the process), waiting time(time the process has to wait to be processed).
+These algorithms are designed to reduce waiting time and ensure that the CPU is continuously executing processes without being idle. 
 ## FCFS 
 
-The fisrt process which come will be processed by the CPU before processing the next process.
+The first process which come will be processed by the CPU before processing the next process.
 
 ## SJF
 
@@ -17,34 +21,55 @@ The process which have least time of execution will be processed first.
 
 ## Round Robin
 
-The process is processed in multiple steps hence giving a equal chance to all processes
+The process is processed in multiple steps hence giving an equal chance to all processes. This is the **most efficient** algorithm for cpu scheduling
 
 # Install with pip
- You can easily install this using pip,
+ You can easily install the simulations of these three algorithms using pip. The name of the package is **CpuSchedulingSimulation** 
+ and the module used is **Cpu_scheduling_algorithms**. You can find the documentation [here](https://pypi.org/project/CpuSchedulingSimulation/#description)
+
 ```
-pip install Cpu-scheduling-simulation
+pip install CpuSchedulingSimulation
 ```
+
+> Note: This will also install pygame(version 2.1.2)
+
 ## Examples
 
-Then just import the package and run the functions named as algorithms to see the simulation in action
+Then just import the package and run the functions named as algorithms to see the simulation in action.
 ```python
-import CpuSchedulingSimulation as css
+import Cpu_scheduling_algorithms as css
 css.FCFS()
+```
+```python
 css.SJF()
+```
+```python
 css.Round_Robin()
 ```
 
 
-# Packages used 
+# Cloning the repo
+Use the following command to clone the repo to your local system.
+
+```commandline
+git clone https://github.com/harisankar01/CPU-Scheduling-Simulation.git
+```
+Then go into the folder to execute the functions.
+```commandline
+cd CPU-Scheduling-Simulation
+```
+### Packages used 
   **Pygame** a popular game library in pyton is used in this project to create simulation of the scheduling process
 
 ```
 pip install pygame
 ```
-You can also clone the repository and run the command to see the simulation in action 
+
+Then finally run the main file which is `FCFS.py` and understand CPU scheduling easily.
+
 ```commandline
 python3 FCFS.py
 ```
 
-> Note: These simultaion can be used to understand CPU scheduling effectively, if you have basic knowledge of 
+> Note: These simulations can be used to understand CPU scheduling effectively, if you have basic knowledge of 
 > CPU scheduling algorithms

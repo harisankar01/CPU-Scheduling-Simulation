@@ -12,10 +12,9 @@ def Round_Robin():
     x=140
     y=320
     a=x-40
-    b=y+50
+    b= d=y+50
     c=x-80
-    d=y+50
-    cir_rect = pygame.rect.Rect(500, 233, x, y)
+    cir_rect = pygame.rect.Rect(500, 233, x,y)
     cir_rect2 = pygame.rect.Rect(50, 23, a,b)
     cir_rect3 = pygame.rect.Rect(50, 23, c,d)
     rec_list = []
@@ -83,7 +82,7 @@ def Round_Robin():
             rr="0"
         if cir.collidepoint(1085,316):
             firstp="0"
-        print(cir.x,cir.y)
+        print(cir.x ,cir.y)
         a=a+0.6
         c=c+0.6
         cir_rect2.update(0,0,a,b)
