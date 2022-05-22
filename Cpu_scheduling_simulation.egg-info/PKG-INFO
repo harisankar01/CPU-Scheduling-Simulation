@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: Cpu-scheduling-simulation
+Version: 0.2
+Summary: See live simulation of FCFS, SJF, Round Robin algorithms in CPU scheduling
+Home-page: https://github.com/harisankar01/CPU-Scheduling-Simulation
+Author: Hari Hara Sankar
+Author-email: hariharasankar.k.a@gmail.com
+License: MIT
+Keywords: CPU Scheduling algorithms Simulation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# CPU Scheduling Simulation
+  CPU use may algorithms such as 
+  + First Come First Served(FCFS)
+  + Shortest Job First(SJF)
+  + Round robin
+
+  These are used to schedule which process or task must be done **first** when many 
+process are waiting. In this project I have created a simulation of these three algorithms to understand them more easier.
+
+# Install with pip
+ You can easily install this using pip,
+```
+pip install Cpu-scheduling-simulation
+```
+Then just import the package and run the functions named as algorithms to see the simulation in action
+```python
+import Cpu-scheduling-simulation as sim
+sim.FCFS()
+sim.SJF()
+sim.Round_Robin()
+```
+
+# Packages used 
+  **Pygame** a popular game library in pyton is used in this project to create simulation of the scheduling process
+
+```
+pip install pygame
+```
+You can also clone the repository and run the command to see the simulation in action 
+```commandline
+python3 FCFS.py
+```
+
+> Note: These simultaion can be used to understand CPU scheduling effectively, if you have basic knowledge of 
+> CPU scheduling algorithms
+
+

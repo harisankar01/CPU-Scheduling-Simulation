@@ -1,0 +1,14 @@
+LICENSE.txt
+pyproject.toml
+setup.cfg
+setup.py
+Cpu_scheduling_algorithms/FCFS.py
+Cpu_scheduling_algorithms/RoundRobin.py
+Cpu_scheduling_algorithms/SJF.py
+Cpu_scheduling_algorithms/__init__.py
+Cpu_scheduling_simulation.egg-info/PKG-INFO
+Cpu_scheduling_simulation.egg-info/SOURCES.txt
+Cpu_scheduling_simulation.egg-info/dependency_links.txt
+Cpu_scheduling_simulation.egg-info/not-zip-safe
+Cpu_scheduling_simulation.egg-info/requires.txt
+Cpu_scheduling_simulation.egg-info/top_level.txt

@@ -2,7 +2,7 @@ import pygame,sys
 def get_font(size) :
     return pygame.font.SysFont('Comic Sans MS', size, pygame.font.Font.bold)
 
-def third():
+def Round_Robin():
     pygame.init()
     SCREEN = pygame.display.set_mode((1280, 620))
     pygame.display.set_caption("Round Robin")
@@ -50,13 +50,11 @@ def third():
         Text3 = Circle3.get_rect(center=cir_rect3.size)
         SCREEN.blit(Circle3, Text3)
         x=x+0.6
-        if cir2.collidepoint(355,370):
+        if cir2.collidepoint(355,370) or cir2.collidepoint(595,356):
             b=b-40
         if cir2.colliderect(rec_list[2]):
             b=b+40
             stp="2"
-        if cir2.collidepoint(595,356):
-            b=b-40
         if cir2.colliderect(rec_list[5]):
             b=b+40
             stp="1"
@@ -65,27 +63,21 @@ def third():
         if cir2.colliderect(rec_list[8]):
             b=b+40
             stp="0"
-        if cir.collidepoint(520,366):
+        if cir.collidepoint(520,366) or cir.collidepoint(748,366) or cir.collidepoint(910,366):
             y=y-50
         if cir.colliderect(rec_list[4]):
             y=y+50
             firstp="3"
-        if cir.collidepoint(748,366):
-            y=y-50
         if cir.colliderect(rec_list[7]):
             y=y+50
             firstp="2"
-        if cir.collidepoint(910,366):
-            y=y-50
         if cir.colliderect(rec_list[9]):
             firstp="1"
-        if cir3.collidepoint(433,356):
+        if cir3.collidepoint(433,356) or cir3.collidepoint(663,356):
             d=d-50
         if cir3.colliderect(rec_list[3]):
             d=d+50
             rr="1"
-        if cir3.collidepoint(663,356):
-            d = d - 50
         if cir3.colliderect(rec_list[6]):
             d=d+50
             rr="0"
@@ -97,15 +89,6 @@ def third():
         cir_rect2.update(0,0,a,b)
         cir_rect.update(0, 0,x,y)
         cir_rect3.update(0,0,c,d)
-
-
-
-
-
-
-
-
-
         for event in pygame.event.get() :
             if event.type == pygame.QUIT :
                 pygame.quit()
