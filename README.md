@@ -73,3 +73,9 @@ python3 FCFS.py
 
 > Note: These simulations can be used to understand CPU scheduling effectively, if you have basic knowledge of 
 > CPU scheduling algorithms
+
+
+# Images
+![Screenshot (23)](https://user-images.githubusercontent.com/90249023/189670435-eab00400-89a6-4ef4-9629-833e7da80617.png)
+![Screenshot (26)](https://user-images.githubusercontent.com/90249023/189670631-014b8d14-a996-4073-9dbd-282338000250.png)
+![Screenshot (28)](https://user-images.githubusercontent.com/90249023/189670664-ce324ea6-b00b-4324-b6c3-75263a033af9.png)
