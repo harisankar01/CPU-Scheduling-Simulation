@@ -1,3 +1,4 @@
+![](http://ForTheBadge.com/images/badges/made-with-python.svg) 	![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 # CPU Scheduling Simulation
 
  CPU scheduling is used to determine which process or task must be done **first** when many 
